@@ -121,7 +121,7 @@ body{
     outline: 0;
     border: 1px solid rgba(128, 128, 128, 0.43) ;
 }
-.class-controller:focus,.calender-input,.street-address-input:focus,.address-input:focus,.calender-input:focus,textarea{
+.class-controller:focus,.calender-input:focus,.street-address-input:focus,.address-input:focus,.calender-input:focus,textarea:focus{
     box-shadow: 0px 0px 1px 1px rgba(105, 104, 104, 0.474);
 }
 .street-address-input, .address-input{
