@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Client Details</title>
+</head>
+<body>
+    <form class="main-form">
+        <div class="header">
+            <h1>Client Details</h1>
+            <p>Enter the details of all incoming clients.</p>
+        </div>
+
+        <div class="field border">
+            <div class="left border">
+            <label for="name">Client Name<span class="star">*</span></label>
+            </div>
+            <div class="right border">
+                <input type="text" class="class-controller" id="name" name="name" minlength="5" maxlength="50" required>
+                <p></p>
+            </div>
+          
+        </div>
+        
+        <div class="field border">
+            <div class="left border">
+                <label for="company">Company<span class="star">*</span></label>
+            </div>
+            <div class="right border">
+                <input type="text" class="class-controller" name="Company-name" minlength="5" maxlength="50" required>
+                <p></p>
+            </div>
+            
+        </div>
+       
+        <div class="field border">
+            <div class="left border">
+                <label for="dept">Department<span class="star">*</span></label>
+            </div>
+            <div class="right border">
+                <select required name="Department" class="class-controller">
+                    <option value="">-Select-</option>
+                    <option>IT</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>CIVIL</option>
+                </select>
+            </div>
+            
+        </div>
+
+        <div class="field border">
+            <div class="left border">
+                <label for="contact-method">Preferred contact method<span class="star">*</span></label>
+            </div>
+           <div class="right border">
+                <input type="radio" id="email" name="contact-method" required>
+                <label for="email">Email</label>
+                <input type="radio" id="phone" name="contact-method" required>
+                <label for="phone">Phone</label>
+           </div>
+            
+        </div>
+
+        <div class="field border">
+            <div class="left border">
+                <label for="company-address">Company address<span class="star">*</span></label>
+            </div>
+
+            <div class="right-address border">
+                <div class="address-top">
+                    <div>
+                        <input type="text" class="street-address-input" name="Street" required>
+                        <span>Street Address</span>
+                        <input type="text" class="street-address-input"  name="Address">
+                        <span>Address Line 2</span>
+                    </div>
+                </div>
+                
+                <div class="company-address">    
+                
+                    <div class="address-bottom">
+                        <div class="address border">
+                            <input type="text" class="address-input" name="City"><br>
+                            <span>City</span>
+                            <p><input type="text" class="address-input" pattern="\d{6}" name="Pincode" required></p>
+                            <span>Postal/Zip Code</span>
+                        </div>
+        
+                        <div class="address border">
+                            <input type="text" id="state-country" class="address-input" name="State"><br>
+                            <span>State/Region/Province</span>
+                            
+                            <p><select id="state-country" class="address-input" name="Country">
+                                <option value="">-Select-</option>
+                                <option>India</option>
+                                <option>America</option>
+                                <option>Italy</option>
+                            </select></p>
+                            <span>Country</span>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="field border">
+            <div class="left border">
+                <label for="company-website">Company website<span class="star">*</span></label>
+            </div>
+            <div class="right border">
+                <input type="url" id="website" name="Company-Website" class="class-controller" pattern="http://.*" required>
+            </div>
+            
+        </div>
+
+        <!-- <div class="field border">
+            <div class="left border">
+                <label for="logo">Company logo</label>
+            </div>
+            <div class="right-logo border">
+                <p>Choose File</p>
+                <p><i class="fa-solid fa-arrow-up-from-bracket" style="background-color:#C1C1C1;padding:80%; border-radius:50%;"></i></p>
+            </div>
+        </div> -->
+
+        <div class="field border">
+            <div class="left border" id="company-logo">
+                <label for="logo" >Company logo</label>
+            </div>
+            <div class="right-logo border">   
+                <div class="override-div">
+                    <p>Choose File</p>
+                    <p><i class="fa-solid fa-arrow-up-from-bracket"></i>
+                     <input type="file" id="select-file">
+                    </p>
+                </div>
+            </div> 
+        </div>
+    
+        <div class="field border">
+            <div class="left border">
+                <label for="Billing">Billing Cycle<span class="star">*</span></label>
+            </div>
+
+            <div class="right border p-relative">
+                <div class="calender">
+                    <input type="text" class="calender-input" name="date" id="date">
+                    <!-- <img src="calender.jpg" width="35px" height="18px"> -->
+                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                    <!-- <a target="_blank" href="https://icons8.com/icon/19611/calendar-minus"></a> -->
+                </div>
+                <div class="calender-child">
+                    <input type="date" class="billing-date" id="billing-date"  name="billing-date">
+                </div>
+            </div>
+
+            <!-- <div class="right border">
+               
+                <div class="date-input">
+                    <input type="date" class="billing-date"  name="Billing-Date" required>
+                    <div class="calender-img">
+                        <img src="calender.jpg" width="40px">
+                    </div>
+                </div>
+                <div class="date">dd-MMM-yyyy</div>
+            </div> -->
+        </div>
+        
+        <div class="field border">
+            <div class="left border">
+                <label for="additional-data">Additional Information</label>
+            </div>
+            <div class="right border">
+                <textarea name="additional-data" rows="5" cols="46" maxlength="200" required></textarea>
+            </div>
+        </div>
+
+        <div class="btn">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+        
+    </form>
+
+    <script type="text/Javascript" src="validationDate.js"></script>
+
+</body>
+</html>
