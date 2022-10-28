@@ -252,5 +252,11 @@ body{
             top: 1px;
 
         }
+        #state-country{
+            margin: 0px;
+        }
+        #company-logo{
+            margin-bottom: 12px;
+        }
         
 }
