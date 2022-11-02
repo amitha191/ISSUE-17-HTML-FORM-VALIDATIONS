@@ -56,14 +56,30 @@
         </div>
 
         <div class="field border">
-            <div class="left border">
+            <div class="left border email-phone-label">
                 <label for="contact-method">Preferred contact method<span class="star">*</span></label>
             </div>
            <div class="right border">
-                <input type="radio" id="email" name="contact-method" required>
-                <label for="email">Email</label>
-                <input type="radio" id="phone" name="contact-method" required>
-                <label for="phone">Phone</label>
+            <div class="email-phone-class">
+
+                <div class="email-class">
+                    <div>
+                        <input type="radio" id="email" name="contact-method" required>
+                    </div>
+                    <div class="email-label">
+                        <label for="email" id="email-label">Email</label>
+                    </div>
+                
+                </div>
+                <div class="phone-class">
+                    <div>
+                        <input type="radio" id="phone" name="contact-method" required>
+                    </div>
+                    <div class="phone-label">
+                        <label for="phone" id="phone-label">Phone</label>
+                    </div>
+                </div>
+            </div>
            </div>
             
         </div>
@@ -95,7 +111,7 @@
         
                         <div class="address border">
                             <input type="text" id="state-country" class="address-input" name="State"><br>
-                            <span>State/Region/Province</span>
+                            <span id="state">State/Region/Province</span>
                             
                             <p><select id="state-country" class="address-input" name="Country">
                                 <option value="">-Select-</option>
@@ -103,7 +119,7 @@
                                 <option>America</option>
                                 <option>Italy</option>
                             </select></p>
-                            <span>Country</span>
+                            <span id="country">Country</span>
                         </div>
                     </div>
             </div>
@@ -151,9 +167,17 @@
 
             <div class="right border p-relative">
                 <div class="calender">
-                    <input type="text" class="calender-input" name="date" id="date">
+                    <div class="calender-text-icon">
+                        <div class="calender-text">
+                            <input type="text" class="calender-input" name="date" id="date">
+                        </div>
+                        <div class="calender-icon">
+                            <span id="calender-icon"><i class="fa-regular fa-calendar-days"></i></span>
+                        </div>
+                    </div>
+                   
                     <!-- <img src="calender.jpg" width="35px" height="18px"> -->
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                    
                     <!-- <a target="_blank" href="https://icons8.com/icon/19611/calendar-minus"></a> -->
                 </div>
                 <div class="calender-child">

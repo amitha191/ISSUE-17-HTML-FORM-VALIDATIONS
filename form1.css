@@ -65,6 +65,25 @@ body{
 /* .company-address, .address-top{
     width: 100%;
 } */
+.email-phone-label{
+    margin-top: 10px;
+}
+#email,#phone{
+    margin-top: 10px;
+}
+.email-class,.phone-class{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+.email-label,.phone-label{
+    margin-top: 7px;
+}
+.email-phone-class{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
 .address-top input,.address-bottom{
     display: flex;
     /* justify-content: space-between; */
@@ -130,9 +149,20 @@ body{
     width: 100%;
 }
 .billing-date{
-    width: 71%;
-    margin-top: 6px;
+    width: 48%;
+    margin-top: 12px;
 }
+.calender-text-icon{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+.calender-icon{
+    margin-top: 10px;
+}
+/* #calender-icon{
+    margin-top: 10px;
+} */
 #company-logo{
     width: 36%;
 }
@@ -155,6 +185,9 @@ body{
 #state-country{
     margin-left: 10px;
 }
+#state, #country{
+    margin-left: 10px;
+}
 /* .address-input{
     width: 100%;
 } */
@@ -170,7 +203,7 @@ body{
 }
 .calender i{
     color: rgb(223, 36, 36);
-    font-size: 20px;
+    font-size: 25px;
 }
 /* .right i{
     position: absolute;
@@ -183,7 +216,7 @@ body{
     position: relative;
 }
 .calender input[type=text]{
-    width: 65%;
+    width: 100%;
     margin-top: 15px;
 }
 .calender-child{
